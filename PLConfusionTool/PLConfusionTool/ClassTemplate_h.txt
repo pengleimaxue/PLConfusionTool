@@ -1,0 +1,20 @@
+//
+//  {{ ClassName }}.h
+//  PLConfusionTool
+//
+//  Created by penglei on {{ CurrentDate }}
+//  Copyright © {{CurrentYear}}年 penglei. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+@interface {{ ClassName }} : NSObject
+
+{% for p in Param %}
+
+- ({{p.key}} *)get{{p.key}}With{{p.value}}:({{p.key}} *){{p.value}};
+
+{% /for %}
+
+@end

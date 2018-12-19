@@ -1,0 +1,27 @@
+//
+//  {{ ClassName }}.m
+//  PLConfusionTool
+//
+//  Created by penglei on {{CurrentDate}}
+//  Copyright © {{CurrentYear}}年 penglei. All rights reserved.
+//
+
+#import "{{ ClassName }}.h"
+
+@implementation {{ ClassName }} {
+{% for p in Param %}
+    {{ p.key }} *_{{ p.value }};
+{% /for %}
+}
+
+
+{% for p in Param %}
+
+- ({{p.key}} *)get{{p.key}}With{{p.value}}:({{p.key}} *){{p.value}} {
+   _{{ p.value }} = {{ p.value }};
+   return _{{ p.value }};
+}
+
+{% /for %}
+
+@end

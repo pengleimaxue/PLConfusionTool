@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9105DCE321C3C9E4007C901F /* ruby.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9105DCE221C3C9E4007C901F /* ruby.rb */; };
+		913B6D6A21C255D0007AE729 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B6D6921C255D0007AE729 /* AppDelegate.m */; };
+		913B6D6D21C255D0007AE729 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B6D6C21C255D0007AE729 /* ViewController.m */; };
+		913B6D6F21C255D3007AE729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 913B6D6E21C255D3007AE729 /* Assets.xcassets */; };
+		913B6D7221C255D3007AE729 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 913B6D7021C255D3007AE729 /* Main.storyboard */; };
+		913B6D7521C255D3007AE729 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B6D7421C255D3007AE729 /* main.m */; };
+		913B6D7E21C2664A007AE729 /* PLCreatNewFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B6D7D21C2664A007AE729 /* PLCreatNewFileManager.m */; };
+		913B6D8F21C34B01007AE729 /* ICUTemplateMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B6D8221C34B01007AE729 /* ICUTemplateMatcher.m */; };
+		913B6D9021C34B01007AE729 /* MGTemplateEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B6D8421C34B01007AE729 /* MGTemplateEngine.m */; };
+		913B6D9121C34B01007AE729 /* MGTemplateStandardFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B6D8821C34B01007AE729 /* MGTemplateStandardFilters.m */; };
+		913B6D9221C34B01007AE729 /* MGTemplateStandardMarkers.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B6D8A21C34B01007AE729 /* MGTemplateStandardMarkers.m */; };
+		913B6D9321C34B01007AE729 /* NSArray_DeepMutableCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B6D8C21C34B01007AE729 /* NSArray_DeepMutableCopy.m */; };
+		913B6D9421C34B01007AE729 /* NSDictionary_DeepMutableCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B6D8E21C34B01007AE729 /* NSDictionary_DeepMutableCopy.m */; };
+		913B6D9721C350AA007AE729 /* ClassTemplate_m.txt in Resources */ = {isa = PBXBuildFile; fileRef = 913B6D9521C350AA007AE729 /* ClassTemplate_m.txt */; };
+		913B6D9821C350AA007AE729 /* ClassTemplate_h.txt in Resources */ = {isa = PBXBuildFile; fileRef = 913B6D9621C350AA007AE729 /* ClassTemplate_h.txt */; };
+		91424D8421C7A89200585C4F /* run.sh in Resources */ = {isa = PBXBuildFile; fileRef = 91424D8321C7A89200585C4F /* run.sh */; };
+		91424D8621C8C87C00585C4F /* addClassMethodTemplate_m.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91424D8521C8C87B00585C4F /* addClassMethodTemplate_m.txt */; };
+		91EE001C21C900F700821EE9 /* addCodeToClassMethodTemplate_m.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91EE001B21C900F700821EE9 /* addCodeToClassMethodTemplate_m.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9105DCE221C3C9E4007C901F /* ruby.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ruby.rb; sourceTree = "<group>"; };
+		913B6D6521C255D0007AE729 /* PLConfusionTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLConfusionTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		913B6D6821C255D0007AE729 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		913B6D6921C255D0007AE729 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		913B6D6B21C255D0007AE729 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		913B6D6C21C255D0007AE729 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		913B6D6E21C255D3007AE729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		913B6D7121C255D3007AE729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		913B6D7321C255D3007AE729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		913B6D7421C255D3007AE729 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		913B6D7621C255D3007AE729 /* PLConfusionTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PLConfusionTool.entitlements; sourceTree = "<group>"; };
+		913B6D7C21C2664A007AE729 /* PLCreatNewFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLCreatNewFileManager.h; sourceTree = "<group>"; };
+		913B6D7D21C2664A007AE729 /* PLCreatNewFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLCreatNewFileManager.m; sourceTree = "<group>"; };
+		913B6D8021C34B01007AE729 /* DeepMutableCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeepMutableCopy.h; sourceTree = "<group>"; };
+		913B6D8121C34B01007AE729 /* ICUTemplateMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICUTemplateMatcher.h; sourceTree = "<group>"; };
+		913B6D8221C34B01007AE729 /* ICUTemplateMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICUTemplateMatcher.m; sourceTree = "<group>"; };
+		913B6D8321C34B01007AE729 /* MGTemplateEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTemplateEngine.h; sourceTree = "<group>"; };
+		913B6D8421C34B01007AE729 /* MGTemplateEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTemplateEngine.m; sourceTree = "<group>"; };
+		913B6D8521C34B01007AE729 /* MGTemplateFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTemplateFilter.h; sourceTree = "<group>"; };
+		913B6D8621C34B01007AE729 /* MGTemplateMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTemplateMarker.h; sourceTree = "<group>"; };
+		913B6D8721C34B01007AE729 /* MGTemplateStandardFilters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTemplateStandardFilters.h; sourceTree = "<group>"; };
+		913B6D8821C34B01007AE729 /* MGTemplateStandardFilters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTemplateStandardFilters.m; sourceTree = "<group>"; };
+		913B6D8921C34B01007AE729 /* MGTemplateStandardMarkers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTemplateStandardMarkers.h; sourceTree = "<group>"; };
+		913B6D8A21C34B01007AE729 /* MGTemplateStandardMarkers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTemplateStandardMarkers.m; sourceTree = "<group>"; };
+		913B6D8B21C34B01007AE729 /* NSArray_DeepMutableCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArray_DeepMutableCopy.h; sourceTree = "<group>"; };
+		913B6D8C21C34B01007AE729 /* NSArray_DeepMutableCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArray_DeepMutableCopy.m; sourceTree = "<group>"; };
+		913B6D8D21C34B01007AE729 /* NSDictionary_DeepMutableCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_DeepMutableCopy.h; sourceTree = "<group>"; };
+		913B6D8E21C34B01007AE729 /* NSDictionary_DeepMutableCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_DeepMutableCopy.m; sourceTree = "<group>"; };
+		913B6D9521C350AA007AE729 /* ClassTemplate_m.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ClassTemplate_m.txt; sourceTree = "<group>"; };
+		913B6D9621C350AA007AE729 /* ClassTemplate_h.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ClassTemplate_h.txt; sourceTree = "<group>"; };
+		91424D8321C7A89200585C4F /* run.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = run.sh; sourceTree = "<group>"; };
+		91424D8521C8C87B00585C4F /* addClassMethodTemplate_m.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addClassMethodTemplate_m.txt; sourceTree = "<group>"; };
+		91EE001B21C900F700821EE9 /* addCodeToClassMethodTemplate_m.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addCodeToClassMethodTemplate_m.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		913B6D6221C255D0007AE729 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		913B6D5C21C255D0007AE729 = {
+			isa = PBXGroup;
+			children = (
+				913B6D6721C255D0007AE729 /* PLConfusionTool */,
+				913B6D6621C255D0007AE729 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		913B6D6621C255D0007AE729 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				913B6D6521C255D0007AE729 /* PLConfusionTool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		913B6D6721C255D0007AE729 /* PLConfusionTool */ = {
+			isa = PBXGroup;
+			children = (
+				913B6D6821C255D0007AE729 /* AppDelegate.h */,
+				913B6D6921C255D0007AE729 /* AppDelegate.m */,
+				913B6D6B21C255D0007AE729 /* ViewController.h */,
+				913B6D6C21C255D0007AE729 /* ViewController.m */,
+				913B6D9621C350AA007AE729 /* ClassTemplate_h.txt */,
+				913B6D9521C350AA007AE729 /* ClassTemplate_m.txt */,
+				91EE001B21C900F700821EE9 /* addCodeToClassMethodTemplate_m.txt */,
+				91424D8521C8C87B00585C4F /* addClassMethodTemplate_m.txt */,
+				913B6D7C21C2664A007AE729 /* PLCreatNewFileManager.h */,
+				913B6D7D21C2664A007AE729 /* PLCreatNewFileManager.m */,
+				9105DCE221C3C9E4007C901F /* ruby.rb */,
+				91424D8321C7A89200585C4F /* run.sh */,
+				913B6D7F21C34B01007AE729 /* MGTemplateEngine */,
+				913B6D6E21C255D3007AE729 /* Assets.xcassets */,
+				913B6D7021C255D3007AE729 /* Main.storyboard */,
+				913B6D7321C255D3007AE729 /* Info.plist */,
+				913B6D7421C255D3007AE729 /* main.m */,
+				913B6D7621C255D3007AE729 /* PLConfusionTool.entitlements */,
+			);
+			path = PLConfusionTool;
+			sourceTree = "<group>";
+		};
+		913B6D7F21C34B01007AE729 /* MGTemplateEngine */ = {
+			isa = PBXGroup;
+			children = (
+				913B6D8021C34B01007AE729 /* DeepMutableCopy.h */,
+				913B6D8121C34B01007AE729 /* ICUTemplateMatcher.h */,
+				913B6D8221C34B01007AE729 /* ICUTemplateMatcher.m */,
+				913B6D8321C34B01007AE729 /* MGTemplateEngine.h */,
+				913B6D8421C34B01007AE729 /* MGTemplateEngine.m */,
+				913B6D8521C34B01007AE729 /* MGTemplateFilter.h */,
+				913B6D8621C34B01007AE729 /* MGTemplateMarker.h */,
+				913B6D8721C34B01007AE729 /* MGTemplateStandardFilters.h */,
+				913B6D8821C34B01007AE729 /* MGTemplateStandardFilters.m */,
+				913B6D8921C34B01007AE729 /* MGTemplateStandardMarkers.h */,
+				913B6D8A21C34B01007AE729 /* MGTemplateStandardMarkers.m */,
+				913B6D8B21C34B01007AE729 /* NSArray_DeepMutableCopy.h */,
+				913B6D8C21C34B01007AE729 /* NSArray_DeepMutableCopy.m */,
+				913B6D8D21C34B01007AE729 /* NSDictionary_DeepMutableCopy.h */,
+				913B6D8E21C34B01007AE729 /* NSDictionary_DeepMutableCopy.m */,
+			);
+			path = MGTemplateEngine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E2B8D9836BF81C1D07A6DC69 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		913B6D6421C255D0007AE729 /* PLConfusionTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 913B6D7921C255D3007AE729 /* Build configuration list for PBXNativeTarget "PLConfusionTool" */;
+			buildPhases = (
+				913B6D6121C255D0007AE729 /* Sources */,
+				913B6D6221C255D0007AE729 /* Frameworks */,
+				913B6D6321C255D0007AE729 /* Resources */,
+				E2B8D9836BF81C1D07A6DC69 /* Headers */,
+				919A837121C3D101009BF7E8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PLConfusionTool;
+			productName = PLConfusionTool;
+			productReference = 913B6D6521C255D0007AE729 /* PLConfusionTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		913B6D5D21C255D0007AE729 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = penglei;
+				TargetAttributes = {
+					913B6D6421C255D0007AE729 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 913B6D6021C255D0007AE729 /* Build configuration list for PBXProject "PLConfusionTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 913B6D5C21C255D0007AE729;
+			productRefGroup = 913B6D6621C255D0007AE729 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				913B6D6421C255D0007AE729 /* PLConfusionTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		913B6D6321C255D0007AE729 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91424D8421C7A89200585C4F /* run.sh in Resources */,
+				913B6D9821C350AA007AE729 /* ClassTemplate_h.txt in Resources */,
+				9105DCE321C3C9E4007C901F /* ruby.rb in Resources */,
+				91424D8621C8C87C00585C4F /* addClassMethodTemplate_m.txt in Resources */,
+				913B6D6F21C255D3007AE729 /* Assets.xcassets in Resources */,
+				913B6D9721C350AA007AE729 /* ClassTemplate_m.txt in Resources */,
+				91EE001C21C900F700821EE9 /* addCodeToClassMethodTemplate_m.txt in Resources */,
+				913B6D7221C255D3007AE729 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		919A837121C3D101009BF7E8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/test.rb",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		913B6D6121C255D0007AE729 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				913B6D6D21C255D0007AE729 /* ViewController.m in Sources */,
+				913B6D7521C255D3007AE729 /* main.m in Sources */,
+				913B6D9421C34B01007AE729 /* NSDictionary_DeepMutableCopy.m in Sources */,
+				913B6D7E21C2664A007AE729 /* PLCreatNewFileManager.m in Sources */,
+				913B6D9321C34B01007AE729 /* NSArray_DeepMutableCopy.m in Sources */,
+				913B6D9121C34B01007AE729 /* MGTemplateStandardFilters.m in Sources */,
+				913B6D9221C34B01007AE729 /* MGTemplateStandardMarkers.m in Sources */,
+				913B6D9021C34B01007AE729 /* MGTemplateEngine.m in Sources */,
+				913B6D6A21C255D0007AE729 /* AppDelegate.m in Sources */,
+				913B6D8F21C34B01007AE729 /* ICUTemplateMatcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		913B6D7021C255D3007AE729 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				913B6D7121C255D3007AE729 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		913B6D7721C255D3007AE729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		913B6D7821C255D3007AE729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		913B6D7A21C255D3007AE729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PLConfusionTool/PLConfusionTool.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F2VX99366Q;
+				INFOPLIST_FILE = PLConfusionTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pengleip.sina.PLConfusionTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		913B6D7B21C255D3007AE729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PLConfusionTool/PLConfusionTool.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F2VX99366Q;
+				INFOPLIST_FILE = PLConfusionTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pengleip.sina.PLConfusionTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		913B6D6021C255D0007AE729 /* Build configuration list for PBXProject "PLConfusionTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				913B6D7721C255D3007AE729 /* Debug */,
+				913B6D7821C255D3007AE729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		913B6D7921C255D3007AE729 /* Build configuration list for PBXNativeTarget "PLConfusionTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				913B6D7A21C255D3007AE729 /* Debug */,
+				913B6D7B21C255D3007AE729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 913B6D5D21C255D0007AE729 /* Project object */;
+}

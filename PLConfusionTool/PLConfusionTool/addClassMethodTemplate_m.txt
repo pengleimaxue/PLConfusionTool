@@ -1,0 +1,22 @@
+
+/**
+{{ ClassName }}类
+*/
+@interface {{ ClassName }} : NSObject
+
+@end
+
+@implementation {{ ClassName }}
+
+{% for p in Param %}
+/**
+@param {{p.value}}
+@return {{p.key}}
+*/
+- ({{p.key}} *)plGet{{p.key}}With{{p.value}}:({{p.key}} *){{p.value}} {
+  return {{ p.value }};
+}
+
+{% /for %}
+
+@end
