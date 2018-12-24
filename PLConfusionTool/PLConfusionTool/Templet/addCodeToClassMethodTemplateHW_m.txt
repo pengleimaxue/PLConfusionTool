@@ -1,0 +1,12 @@
+
+{% for p in Param %}
+//海外渠道随机变量{{p.value}}，与具体业务逻辑无关
+{{p.key}} * {{p.value}};
+if ({{p.value}} == nil) {
+ {{p.value}} = [{{p.key}} new];
+} else {
+{{p.value}} = nil;
+}
+
+{% /for %}
+

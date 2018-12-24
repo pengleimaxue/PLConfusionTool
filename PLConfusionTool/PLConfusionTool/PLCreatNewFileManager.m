@@ -9,12 +9,12 @@
 #import "PLCreatNewFileManager.h"
 #import "MGTemplateEngine.h"
 #import "ICUTemplateMatcher.h"
-
+#import "modifyProjectTool.m"
 
 @interface PLCreatNewFileManager ()
 
 @property (nonatomic, strong) NSMutableArray *fileArray;
-
+@property (nonatomic, strong) NSArray *channelArray;
 @end
 
 @implementation PLCreatNewFileManager
@@ -25,6 +25,12 @@
         self.methodMaxCount = 8;
         self.classMinCount = 10;
         self.classMaxCount = 15;
+        self.channelArray = @[
+                              @"HW",
+                              @"CN",
+                              @"TW",
+                              @"Other"
+                              ];
     }
     return self;
 }
@@ -57,12 +63,27 @@
        
        
     }
+    
+    //给已有类添加方法
+    if (self.selectClassFilePath && self.selectClassFilePath.length) {
+        [self addConfusionMethondForExistClassM:self.selectClassFilePath];
+    }
+    if (self.selectAssetsPath && self.selectAssetsPath.length) {
+        handleXcassetsFiles(self.selectAssetsPath);
+    }
+    //修改项目名称
+    if (self.isNeedRenameProjectName) {
+        [self renamProject:rootPath];
+    }
+    
     return [self creatClass];
 }
 
 - (BOOL)creatClass {
-    NSString *templatePath_h = [[NSBundle mainBundle] pathForResource:@"ClassTemplate_h" ofType:@"txt"];
-    NSString *templatePath_m = [[NSBundle mainBundle] pathForResource:@"ClassTemplate_m" ofType:@"txt"];
+    NSString *sourceHName = [@"ClassTemplate" stringByAppendingFormat:@"%@_h",self.channelArray[self.selectChannel]];
+    NSString *sourceMName = [@"ClassTemplate" stringByAppendingFormat:@"%@_m",self.channelArray[self.selectChannel]];
+    NSString *templatePath_h = [[NSBundle mainBundle] pathForResource:sourceHName ofType:@"txt"];
+    NSString *templatePath_m = [[NSBundle mainBundle] pathForResource:sourceMName ofType:@"txt"];
     
     MGTemplateEngine *engine = [MGTemplateEngine templateEngine];
 
@@ -96,7 +117,7 @@
 //    if (self.fileArray.count) {
 //        [self showAllFileWithPath:self.fileArray[0]];
 //    }
-    
+ 
     return YES;
     
 }
@@ -148,16 +169,39 @@
                 
             }
         }
-    }else{
+    } else {
         //NSLog(@"this path is not exist!");
     }
+}
+
+- (void)renamProject:(NSString *)path {
+    NSFileManager * fileManger = [NSFileManager defaultManager];
+     BOOL isDir = NO;
+     BOOL isExist = [fileManger fileExistsAtPath:path isDirectory:&isDir];
+    if (isDir && isExist) {
+         NSArray * dirArray = [fileManger contentsOfDirectoryAtPath:path error:nil];
+        NSString * subPath = nil;
+        for (NSString * str in dirArray) {
+            subPath  = [path stringByAppendingPathComponent:str];
+            if ([str containsString:@"xcodeproj"]) {
+                NSString *oldProjectName = [str componentsSeparatedByString:@"."].firstObject;
+                NSString *projectPbxprojFilePath = [subPath stringByAppendingPathComponent:@"project.pbxproj"];
+                 if ([fileManger fileExistsAtPath:projectPbxprojFilePath]) {
+                     modifyProjectName(path, oldProjectName, self.novelProjectName);
+                 }
+                break;
+            }
+        }
+    }
+    
 }
 
 //遍历.m,找到所有方法，在方法中插入对应的随机的混淆代码
 
 - (NSString *)serachClassAllMethond:(NSString *)classNameString {
     NSMutableString * newClassString = [[NSMutableString alloc]initWithString:classNameString];
-    NSString *addCodeToClassMethond_mPath = [[NSBundle mainBundle] pathForResource:@"addCodeToClassMethodTemplate_m" ofType:@"txt"];
+     NSString *addCodesourceMName = [@"addCodeToClassMethodTemplate" stringByAppendingFormat:@"%@_m",self.channelArray[self.selectChannel]];
+     NSString *addCodeToClassMethond_mPath = [[NSBundle mainBundle] pathForResource:addCodesourceMName ofType:@"txt"];
      NSString *addCodeToClassMethond_m =[[NSString alloc] initWithContentsOfFile:addCodeToClassMethond_mPath encoding:NSUTF8StringEncoding error:nil];
     NSUInteger countNewMethond = 0;
      NSInteger bracesPrefixCount = 0;
@@ -252,7 +296,7 @@
 
 //生成指定长度随机字符串
 - (NSString *)randomStringWithLength:(NSInteger)len {
-    NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZmnopqrGHIJKLMNstuvwxyzstuvwxyzABCDEFGHIJKLMNOP";
+    NSString *letters = @"abcdefgCDEFGHIhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZmnopqrGHIJKLMNstuvwxyzstuvwxyzABCDEFGHIJKLMNOP";
     NSMutableString *randomString = [NSMutableString stringWithCapacity: len];
     
     for (NSInteger i = 0; i < len; i++) {
@@ -268,10 +312,11 @@
     
     NSMutableArray *methodArray = [[NSMutableArray alloc]initWithCapacity:0];
     for (NSInteger i = 0; i<methodCout; i++) {
-        NSString *randomName =  [[self randomStringWithLength:arc4random()%6+1]
-                                 stringByAppendingFormat:@"%@",
-                                 [self randomStringWithLength:arc4random()%8+1]];
+        NSMutableString *randomName = [[NSMutableString alloc] initWithCapacity:0];
         
+        [randomName appendString: [self randomStringWithLength:arc4random()%3+1]];
+        [randomName appendString: [self randomStringWithLength:arc4random()%6+1]];
+        [randomName appendString: [self randomStringWithLength:arc4random()%(i%8+1)+1]];
         NSDictionary *dict = @{
                                @"key":methodtypeArry[arc4random_uniform(methodtypeArry.count)],
                                @"value":[@"pl_" stringByAppendingString:randomName]

@@ -1,0 +1,10 @@
+
+{% for p in Param %}
+//国内渠道变量{{p.value}}，与具体业务逻辑无关
+{{p.key}} * {{p.value}};
+if ({{p.value}}) {
+ {{p.value}} = nil;
+}
+
+{% /for %}
+

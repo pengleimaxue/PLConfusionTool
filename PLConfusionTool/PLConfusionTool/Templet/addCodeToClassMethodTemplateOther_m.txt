@@ -1,6 +1,6 @@
 
 {% for p in Param %}
-//变量{{p.value}}，与具体业务逻辑无关
+//其他渠道 变量{{p.value}}，与具体业务逻辑无关
 {{p.key}} * {{p.value}};
 if ({{p.value}}) {
  {{p.value}} = nil;

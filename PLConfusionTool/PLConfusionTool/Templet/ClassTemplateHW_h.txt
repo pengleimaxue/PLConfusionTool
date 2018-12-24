@@ -12,7 +12,19 @@
 @interface {{ ClassName }} : NSObject
 
 {% for p in Param %}
+/**
+@param 海外渠道变量属性{{p.value}}
+*/
+@property (nonatomic, strong) {{p.key}} *{{p.value}};
 
+{% /for %}
+
+{% for p in Param %}
+/**
+海外渠道新增方法
+@param {{p.value}}
+@return {{p.key}}
+*/
 - ({{p.key}} *)get{{p.key}}With{{p.value}}:({{p.key}} *){{p.value}};
 
 {% /for %}

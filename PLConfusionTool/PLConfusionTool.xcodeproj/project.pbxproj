@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		9105DCE321C3C9E4007C901F /* ruby.rb in Resources */ = {isa = PBXBuildFile; fileRef = 9105DCE221C3C9E4007C901F /* ruby.rb */; };
+		91174A9021CCBAB100B1CB57 /* addClassMethodTemplate_m.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91174A8321CCBAB100B1CB57 /* addClassMethodTemplate_m.txt */; };
+		91174A9221CCBAB100B1CB57 /* addCodeToClassMethodTemplateCN_m.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91174A8521CCBAB100B1CB57 /* addCodeToClassMethodTemplateCN_m.txt */; };
+		91174A9321CCBAB100B1CB57 /* addCodeToClassMethodTemplateHW_m.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91174A8621CCBAB100B1CB57 /* addCodeToClassMethodTemplateHW_m.txt */; };
+		91174A9421CCBAB100B1CB57 /* addCodeToClassMethodTemplateTW_m.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91174A8721CCBAB100B1CB57 /* addCodeToClassMethodTemplateTW_m.txt */; };
+		91174A9721CCBAB100B1CB57 /* ClassTemplateCN_h.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91174A8A21CCBAB100B1CB57 /* ClassTemplateCN_h.txt */; };
+		91174A9821CCBAB100B1CB57 /* ClassTemplateCN_m.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91174A8B21CCBAB100B1CB57 /* ClassTemplateCN_m.txt */; };
+		91174A9921CCBAB100B1CB57 /* ClassTemplateHW_h.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91174A8C21CCBAB100B1CB57 /* ClassTemplateHW_h.txt */; };
+		91174A9A21CCBAB100B1CB57 /* ClassTemplateHW_m.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91174A8D21CCBAB100B1CB57 /* ClassTemplateHW_m.txt */; };
+		91174A9B21CCBAB100B1CB57 /* ClassTemplateTW_h.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91174A8E21CCBAB100B1CB57 /* ClassTemplateTW_h.txt */; };
+		91174A9C21CCBAB100B1CB57 /* ClassTemplateTW_m.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91174A8F21CCBAB100B1CB57 /* ClassTemplateTW_m.txt */; };
+		91174A9E21CCC03E00B1CB57 /* addCodeToClassMethodTemplateOther_m.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91174A9D21CCC03E00B1CB57 /* addCodeToClassMethodTemplateOther_m.txt */; };
+		91174AA121CCC05E00B1CB57 /* ClassTemplateOther_m.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91174A9F21CCC05E00B1CB57 /* ClassTemplateOther_m.txt */; };
+		91174AA221CCC05E00B1CB57 /* ClassTemplateOther_h.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91174AA021CCC05E00B1CB57 /* ClassTemplateOther_h.txt */; };
 		913B6D6A21C255D0007AE729 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B6D6921C255D0007AE729 /* AppDelegate.m */; };
 		913B6D6D21C255D0007AE729 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B6D6C21C255D0007AE729 /* ViewController.m */; };
 		913B6D6F21C255D3007AE729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 913B6D6E21C255D3007AE729 /* Assets.xcassets */; };
@@ -20,15 +33,25 @@
 		913B6D9221C34B01007AE729 /* MGTemplateStandardMarkers.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B6D8A21C34B01007AE729 /* MGTemplateStandardMarkers.m */; };
 		913B6D9321C34B01007AE729 /* NSArray_DeepMutableCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B6D8C21C34B01007AE729 /* NSArray_DeepMutableCopy.m */; };
 		913B6D9421C34B01007AE729 /* NSDictionary_DeepMutableCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 913B6D8E21C34B01007AE729 /* NSDictionary_DeepMutableCopy.m */; };
-		913B6D9721C350AA007AE729 /* ClassTemplate_m.txt in Resources */ = {isa = PBXBuildFile; fileRef = 913B6D9521C350AA007AE729 /* ClassTemplate_m.txt */; };
-		913B6D9821C350AA007AE729 /* ClassTemplate_h.txt in Resources */ = {isa = PBXBuildFile; fileRef = 913B6D9621C350AA007AE729 /* ClassTemplate_h.txt */; };
 		91424D8421C7A89200585C4F /* run.sh in Resources */ = {isa = PBXBuildFile; fileRef = 91424D8321C7A89200585C4F /* run.sh */; };
-		91424D8621C8C87C00585C4F /* addClassMethodTemplate_m.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91424D8521C8C87B00585C4F /* addClassMethodTemplate_m.txt */; };
-		91EE001C21C900F700821EE9 /* addCodeToClassMethodTemplate_m.txt in Resources */ = {isa = PBXBuildFile; fileRef = 91EE001B21C900F700821EE9 /* addCodeToClassMethodTemplate_m.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9105DCE221C3C9E4007C901F /* ruby.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ruby.rb; sourceTree = "<group>"; };
+		91174A8021CC7E8A00B1CB57 /* modifyProjectTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = modifyProjectTool.m; sourceTree = "<group>"; };
+		91174A8321CCBAB100B1CB57 /* addClassMethodTemplate_m.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addClassMethodTemplate_m.txt; sourceTree = "<group>"; };
+		91174A8521CCBAB100B1CB57 /* addCodeToClassMethodTemplateCN_m.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addCodeToClassMethodTemplateCN_m.txt; sourceTree = "<group>"; };
+		91174A8621CCBAB100B1CB57 /* addCodeToClassMethodTemplateHW_m.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addCodeToClassMethodTemplateHW_m.txt; sourceTree = "<group>"; };
+		91174A8721CCBAB100B1CB57 /* addCodeToClassMethodTemplateTW_m.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addCodeToClassMethodTemplateTW_m.txt; sourceTree = "<group>"; };
+		91174A8A21CCBAB100B1CB57 /* ClassTemplateCN_h.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ClassTemplateCN_h.txt; sourceTree = "<group>"; };
+		91174A8B21CCBAB100B1CB57 /* ClassTemplateCN_m.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ClassTemplateCN_m.txt; sourceTree = "<group>"; };
+		91174A8C21CCBAB100B1CB57 /* ClassTemplateHW_h.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ClassTemplateHW_h.txt; sourceTree = "<group>"; };
+		91174A8D21CCBAB100B1CB57 /* ClassTemplateHW_m.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ClassTemplateHW_m.txt; sourceTree = "<group>"; };
+		91174A8E21CCBAB100B1CB57 /* ClassTemplateTW_h.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ClassTemplateTW_h.txt; sourceTree = "<group>"; };
+		91174A8F21CCBAB100B1CB57 /* ClassTemplateTW_m.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ClassTemplateTW_m.txt; sourceTree = "<group>"; };
+		91174A9D21CCC03E00B1CB57 /* addCodeToClassMethodTemplateOther_m.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addCodeToClassMethodTemplateOther_m.txt; sourceTree = "<group>"; };
+		91174A9F21CCC05E00B1CB57 /* ClassTemplateOther_m.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ClassTemplateOther_m.txt; sourceTree = "<group>"; };
+		91174AA021CCC05E00B1CB57 /* ClassTemplateOther_h.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ClassTemplateOther_h.txt; sourceTree = "<group>"; };
 		913B6D6521C255D0007AE729 /* PLConfusionTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLConfusionTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		913B6D6821C255D0007AE729 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		913B6D6921C255D0007AE729 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,11 +79,7 @@
 		913B6D8C21C34B01007AE729 /* NSArray_DeepMutableCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArray_DeepMutableCopy.m; sourceTree = "<group>"; };
 		913B6D8D21C34B01007AE729 /* NSDictionary_DeepMutableCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_DeepMutableCopy.h; sourceTree = "<group>"; };
 		913B6D8E21C34B01007AE729 /* NSDictionary_DeepMutableCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_DeepMutableCopy.m; sourceTree = "<group>"; };
-		913B6D9521C350AA007AE729 /* ClassTemplate_m.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ClassTemplate_m.txt; sourceTree = "<group>"; };
-		913B6D9621C350AA007AE729 /* ClassTemplate_h.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ClassTemplate_h.txt; sourceTree = "<group>"; };
 		91424D8321C7A89200585C4F /* run.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = run.sh; sourceTree = "<group>"; };
-		91424D8521C8C87B00585C4F /* addClassMethodTemplate_m.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addClassMethodTemplate_m.txt; sourceTree = "<group>"; };
-		91EE001B21C900F700821EE9 /* addCodeToClassMethodTemplate_m.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = addCodeToClassMethodTemplate_m.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +93,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91174A8221CCBAB100B1CB57 /* Templet */ = {
+			isa = PBXGroup;
+			children = (
+				91174A8321CCBAB100B1CB57 /* addClassMethodTemplate_m.txt */,
+				91174A8521CCBAB100B1CB57 /* addCodeToClassMethodTemplateCN_m.txt */,
+				91174A8621CCBAB100B1CB57 /* addCodeToClassMethodTemplateHW_m.txt */,
+				91174A8721CCBAB100B1CB57 /* addCodeToClassMethodTemplateTW_m.txt */,
+				91174A9D21CCC03E00B1CB57 /* addCodeToClassMethodTemplateOther_m.txt */,
+				91174A8A21CCBAB100B1CB57 /* ClassTemplateCN_h.txt */,
+				91174A8B21CCBAB100B1CB57 /* ClassTemplateCN_m.txt */,
+				91174A8C21CCBAB100B1CB57 /* ClassTemplateHW_h.txt */,
+				91174A8D21CCBAB100B1CB57 /* ClassTemplateHW_m.txt */,
+				91174A8E21CCBAB100B1CB57 /* ClassTemplateTW_h.txt */,
+				91174A8F21CCBAB100B1CB57 /* ClassTemplateTW_m.txt */,
+				91174AA021CCC05E00B1CB57 /* ClassTemplateOther_h.txt */,
+				91174A9F21CCC05E00B1CB57 /* ClassTemplateOther_m.txt */,
+			);
+			path = Templet;
+			sourceTree = "<group>";
+		};
 		913B6D5C21C255D0007AE729 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +136,10 @@
 				913B6D6921C255D0007AE729 /* AppDelegate.m */,
 				913B6D6B21C255D0007AE729 /* ViewController.h */,
 				913B6D6C21C255D0007AE729 /* ViewController.m */,
-				913B6D9621C350AA007AE729 /* ClassTemplate_h.txt */,
-				913B6D9521C350AA007AE729 /* ClassTemplate_m.txt */,
-				91EE001B21C900F700821EE9 /* addCodeToClassMethodTemplate_m.txt */,
-				91424D8521C8C87B00585C4F /* addClassMethodTemplate_m.txt */,
 				913B6D7C21C2664A007AE729 /* PLCreatNewFileManager.h */,
 				913B6D7D21C2664A007AE729 /* PLCreatNewFileManager.m */,
+				91174A8021CC7E8A00B1CB57 /* modifyProjectTool.m */,
+				91174A8221CCBAB100B1CB57 /* Templet */,
 				9105DCE221C3C9E4007C901F /* ruby.rb */,
 				91424D8321C7A89200585C4F /* run.sh */,
 				913B6D7F21C34B01007AE729 /* MGTemplateEngine */,
@@ -214,14 +251,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91174A9821CCBAB100B1CB57 /* ClassTemplateCN_m.txt in Resources */,
 				91424D8421C7A89200585C4F /* run.sh in Resources */,
-				913B6D9821C350AA007AE729 /* ClassTemplate_h.txt in Resources */,
+				91174A9221CCBAB100B1CB57 /* addCodeToClassMethodTemplateCN_m.txt in Resources */,
 				9105DCE321C3C9E4007C901F /* ruby.rb in Resources */,
-				91424D8621C8C87C00585C4F /* addClassMethodTemplate_m.txt in Resources */,
+				91174A9C21CCBAB100B1CB57 /* ClassTemplateTW_m.txt in Resources */,
+				91174A9921CCBAB100B1CB57 /* ClassTemplateHW_h.txt in Resources */,
+				91174AA121CCC05E00B1CB57 /* ClassTemplateOther_m.txt in Resources */,
+				91174A9B21CCBAB100B1CB57 /* ClassTemplateTW_h.txt in Resources */,
+				91174A9421CCBAB100B1CB57 /* addCodeToClassMethodTemplateTW_m.txt in Resources */,
+				91174A9021CCBAB100B1CB57 /* addClassMethodTemplate_m.txt in Resources */,
+				91174A9A21CCBAB100B1CB57 /* ClassTemplateHW_m.txt in Resources */,
 				913B6D6F21C255D3007AE729 /* Assets.xcassets in Resources */,
-				913B6D9721C350AA007AE729 /* ClassTemplate_m.txt in Resources */,
-				91EE001C21C900F700821EE9 /* addCodeToClassMethodTemplate_m.txt in Resources */,
+				91174A9E21CCC03E00B1CB57 /* addCodeToClassMethodTemplateOther_m.txt in Resources */,
+				91174AA221CCC05E00B1CB57 /* ClassTemplateOther_h.txt in Resources */,
+				91174A9721CCBAB100B1CB57 /* ClassTemplateCN_h.txt in Resources */,
 				913B6D7221C255D3007AE729 /* Main.storyboard in Resources */,
+				91174A9321CCBAB100B1CB57 /* addCodeToClassMethodTemplateHW_m.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
