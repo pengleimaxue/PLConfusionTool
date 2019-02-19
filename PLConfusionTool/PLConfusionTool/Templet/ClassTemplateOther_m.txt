@@ -6,13 +6,19 @@
 //  Copyright © {{CurrentYear}}年 penglei. All rights reserved.
 //
 
-#import "{{ ClassName }}.h"
+{% for p in classArray %}
+#import "{{ p }}.h"
+{% /for %}
 
 @implementation {{ ClassName }}
 
 {% for p in Param %}
 
 + ({{p.key}} *)get{{p.key}}With{{p.value}}:({{p.key}} *){{p.value}} {
+{% for method in previousClassMethond %}
+    {{method.key}} * pl{{method.value}} =  [[{{method.key}} alloc]init];
+    pl{{method.value}} = [{{previousClassName}} get{{method.key}}With{{method.value}}:pl{{method.value}}];
+{% /for %}
    return {{ p.value }};
 }
 

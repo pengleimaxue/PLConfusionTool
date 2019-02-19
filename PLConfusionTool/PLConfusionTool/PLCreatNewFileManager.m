@@ -15,6 +15,8 @@
 
 @property (nonatomic, strong) NSMutableArray *fileArray;
 @property (nonatomic, strong) NSArray *channelArray;
+@property (nonatomic, strong) NSString *previousClassName;
+@property (nonatomic, strong) NSArray *previousClassMethondName;
 @end
 
 @implementation PLCreatNewFileManager
@@ -92,14 +94,28 @@
     for (NSString *path in self.fileArray) {
         
         NSUInteger classCout = [self getRandomNumber:self.classMinCount to:self.classMaxCount];
+        self.previousClassName = nil;
+        self.previousClassMethondName = @[];
         for (NSInteger i = 0; i<classCout; i++) {
             NSString *className = [self getRandomClassName];
+            NSArray *claassArray;
+            if (self.previousClassName) {
+                claassArray = @[className,self.previousClassName];
+            } else {
+                claassArray = @[className];
+            }
+            NSArray *methondArray =[self getRandomMethodArray];
             NSDictionary *variables = @{
-                                        @"Param": [self getRandomMethodArray],
+                                        @"Param": methondArray,
                                         @"ClassName":className,
                                         @"CurrentDate":[self currentDate],
-                                        @"CurrentYear":[self currentYear]
+                                        @"CurrentYear":[self currentYear],
+                                        @"classArray":claassArray,
+                                        @"previousClassMethond":self.previousClassMethondName,
+                                        @"previousClassName":self.previousClassName?:@""
                                         };
+            self.previousClassName = className;
+            self.previousClassMethondName = [NSArray arrayWithObject:methondArray[0]];
             NSString *resultH = [engine processTemplateInFileAtPath:templatePath_h withVariables:variables];
             NSString *resultM = [engine processTemplateInFileAtPath:templatePath_m withVariables:variables];
             NSError *error = nil;
@@ -298,7 +314,10 @@
 - (NSString *)randomStringWithLength:(NSInteger)len {
     NSString *letters = @"abcdefgCDEFGHIhijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZmnopqrGHIJKLMNstuvwxyzstuvwxyzABCDEFGHIJKLMNOP";
     NSMutableString *randomString = [NSMutableString stringWithCapacity: len];
-    
+    NSURL *test = [[NSURL alloc] init];;
+    if ([test isKindOfClass:[letters class]]) {
+        
+    }
     for (NSInteger i = 0; i < len; i++) {
         [randomString appendFormat: @"%c", [letters characterAtIndex: arc4random_uniform([letters length])]];
     }
